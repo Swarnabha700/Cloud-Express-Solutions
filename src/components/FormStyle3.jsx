@@ -8,12 +8,12 @@ const FormStyle3 = () => {
   const image = watch('image');
 
   return (
-    <div className="bg-gray-50 text-gray-900 p-6 rounded-lg shadow-sm space-y-8">
+    <div className="bg-gradient-to-bl from-gray-400 to-gray-200 text-gray-900 p-6 rounded-lg shadow-sm space-y-8">
       <div className="flex justify-center">
         {image ? (
           <img src={URL.createObjectURL(image)} alt="Preview" className="w-[28%] max-h-[300px] object-contain" />
         ) : (
-          <div className="w-[28%] h-[300px] flex items-center justify-center text-gray-400">Upload an image</div>
+          <div className="w-[28%] h-[300px] flex items-center border border-black rounded-xl justify-center text-gray-800">Upload an image</div>
         )}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
