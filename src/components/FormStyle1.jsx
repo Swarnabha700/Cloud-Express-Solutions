@@ -8,26 +8,50 @@ const FormStyle1 = () => {
   const image = watch('image');
 
   return (
-    <div className="bg-white text-black p-6 rounded-2xl shadow-xl grid md:grid-cols-3 gap-6">
-      <div className="col-span-1 flex flex-col items-center justify-center">
+    <div className="bg-gradient-to-br from-slate-50 to-white text-slate-800 p-8 rounded-2xl shadow-lg grid md:grid-cols-3 gap-8 max-w-6xl mx-auto border border-slate-100">
+      <div className="col-span-1 flex flex-col items-center justify-center space-y-4">
         {image ? (
-          <img src={URL.createObjectURL(image)} alt="T-shirt preview" className="max-h-[400px] w-full object-contain border" />
+          <img 
+            src={URL.createObjectURL(image)} 
+            alt="T-shirt preview" 
+            className="max-h-[350px] w-full object-contain rounded-lg shadow-sm border border-slate-200 bg-white p-2" 
+          />
         ) : (
-          <div className="w-full h-[400px] border border-gray-400 flex items-center justify-center text-gray-500">No Image Selected</div>
+          <div className="w-full h-[350px] border-2 border-dashed border-slate-300 rounded-lg flex flex-col items-center justify-center text-slate-500 bg-white transition-colors duration-200 hover:bg-slate-50">
+            <svg className="w-12 h-12 mb-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <p className="font-medium">No Image Selected</p>
+            <p className="text-sm text-slate-400 mt-1">Click to upload</p>
+          </div>
         )}
       </div>
-      <div className="col-span-1 flex flex-col gap-4 justify-start">
+      <div className="col-span-1 flex flex-col gap-6 justify-start">
         <label className="block">
-          Height (cm)
-          <input {...register('height')} type="number" className="mt-1 block w-full p-2 border rounded" defaultValue="180" />
+          <span className="text-sm font-medium text-slate-700">Height (cm)</span>
+          <input 
+            {...register('height')} 
+            type="number" 
+            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" 
+            defaultValue="180" 
+          />
         </label>
         <label className="block">
-          Weight (kg)
-          <input {...register('weight')} type="number" className="mt-1 block w-full p-2 border rounded" defaultValue="80" />
+          <span className="text-sm font-medium text-slate-700">Weight (kg)</span>
+          <input 
+            {...register('weight')} 
+            type="number" 
+            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" 
+            defaultValue="80" 
+          />
         </label>
         <label className="block">
-          Build
-          <select {...register('build')} className="mt-1 block w-full p-2 border rounded" defaultValue="athletic">
+          <span className="text-sm font-medium text-slate-700">Build</span>
+          <select 
+            {...register('build')} 
+            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" 
+            defaultValue="athletic"
+          >
             <option value="lean">Lean</option>
             <option value="reg">Regular</option>
             <option value="athletic">Athletic</option>
