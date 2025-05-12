@@ -1,12 +1,49 @@
-# React + Vite
+# POD T-Shirt Customizer – React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a single-page, responsive **Print-on-Demand T-Shirt customization tool** built using **React, Tailwind CSS v3.4.17**, and **react-hook-form**. The UI is based on [this CodePen layout](https://codepen.io/jkantner/full/OPJrMbp) with customized structure and features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Features
 
-## Expanding the ESLint configuration
+- Upload or drag-and-drop image to preview on T-shirt
+- Input controls for **Height**, **Weight**, and **Build** (defaulted to 180cm, 80kg, athletic)
+- Customizable **3-line text input**
+- Three visually distinct form layouts using `react-hook-form`
+- Seamless style switch with **Alt + Q** while preserving form state
+- Fully responsive layout
+- Deployed on **Cloudflare Pages**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Explanation
+
+Built with:
+- **React + Vite** for modern fast SPA setup
+- **Tailwind CSS** for consistent and responsive styling
+- **react-hook-form** for reliable and scalable form handling
+- **react-dropzone** for image drag-and-drop/upload
+
+AI assistance (ChatGPT) was used to brainstorm structure and generate early JSX drafts. Final design, layout, state management, and responsiveness were manually coded and tested.
+
+---
+
+## 🌐 Live Demo
+
+👉 [https://cloud-express-solutions-new.pages.dev/](https://cloud-express-solutions-new.pages.dev/)
+
+---
+
+## 📦 GitLab Export
+
+The `.tar.gz` export from GitLab includes all code, commit history, and structure. It is ready for review or import.
+
+---
+
+## 📧 Contact
+
+- Email: [chakrabortyswarnabha700@gmail.com](mailto:chakrabortyswarnabha700@gmail.com)
+- GitHub repo for this project: https://github.com/Swarnabha700/Cloud-Express-Solutions
+
+## 📅 Availability Note
+I'm currently finishing my final semester, which ends on May 17th. I will be fully available for interviews or discussions anytime after that.
